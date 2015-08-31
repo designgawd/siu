@@ -34,12 +34,13 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+
         bluetooth.enable(
             function(){
                 document.getElementById('BTMessage').innerHTML = "Bluetooth Enabled";
             },
-            function(){
-                document.getElementById('BTMessage').innerHTML = "Sorry, No Bluetooth!";
+            function(res){
+                document.getElementById('BTMessage').innerHTML = "Sorry, No Bluetooth! "+JSON.stringify(res);
             }
         );
     },
