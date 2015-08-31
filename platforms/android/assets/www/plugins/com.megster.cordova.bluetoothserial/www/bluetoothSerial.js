@@ -113,7 +113,7 @@ module.exports = {
     },
 
     setDeviceDiscoveredListener: function (notify) {
-        if (typeof notify != 'function')
+        if (typeof success != 'function')
             throw 'BluetoothSerial.setDeviceDiscoveredListener: Callback not a function'
 
         cordova.exec(notify, null, "BluetoothSerial", "setDeviceDiscoveredListener", []);

@@ -9,9 +9,8 @@
     },
     "com.megster.cordova.bluetoothserial": {
         "source": {
-            "type": "git",
-            "url": "https://github.com/don/BluetoothSerial.git",
-            "subdir": "."
+            "type": "registry",
+            "id": "com.megster.cordova.bluetoothserial"
         },
         "is_top_level": true,
         "variables": {}
